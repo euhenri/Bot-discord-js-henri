@@ -12,7 +12,7 @@ module.exports = class extends Command {
     }
 
     run = (interaction) => {
-        interaction.reply({ content: 'Fromulário iniciado. Responda às perguntas abaixo:', ephemeral: true })
+        interaction.reply({ content: 'Formulário iniciado. Responda às perguntas abaixo:', ephemeral: true })
 
         createForm()
             .then(answers => {
